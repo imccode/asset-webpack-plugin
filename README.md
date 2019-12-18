@@ -76,5 +76,4 @@ module.exports = {
 - **include** 包含处理的资源。默认: `undefined`
 - **exclude** 排除要处理的资源。默认: `undefined`
 - **fallback** 指定当目标文件的大小超过limit选项中设置的限制时使用的备用loader。 默认: `'file-loader'`
-- **fallback** 指定当目标文件的大小超过limit选项中设置的限制时使用的备用loader。 默认: `'file-loader'`
 - **...** [file-loader](https://github.com/webpack-contrib/file-loader)的options配置。
