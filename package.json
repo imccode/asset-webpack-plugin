@@ -1,0 +1,54 @@
+{
+  "name": "smart-webpack-plugin",
+  "version": "0.0.1",
+  "description": "一个处理静态资源的webpack插件",
+  "main": "lib/index.js",
+  "module": "src/index.ts",
+  "typings": "types/index.d.ts",
+  "type": "module",
+  "author": "ccode",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src/",
+    "lib/",
+    "example",
+    "types"
+  ],
+  "keywords": [
+    "asset-webpack-plugin",
+    "asset-webpack",
+    "webpack-plugin",
+    "webpack"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imccode/asset-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/imccode/asset-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/imccode/asset-webpack-plugin",
+  "scripts": {
+    "test": "ts-node ./test/test.ts",
+    "build": "webpack --config ./my-app/test.js --mode production --display none",
+    "cli": "webpack --config ./my-app/test.js --mode development --display none -w"
+  },
+  "dependencies": {
+    "file-loader": "^5.0.2",
+    "url-loader": "^2.3.0",
+    "webpack": "^4.41.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.5",
+    "@types/webpack": "^4.41.0",
+    "prettier": "1.19.1",
+    "ts-node": "latest",
+    "ts-node-dev": "latest",
+    "typescript": "latest"
+  }
+}
