@@ -163,7 +163,7 @@ export interface MediaOptions extends UrlLoaderOptions {
   /**
    * 使用正则表达式来过滤需要处理的文件
    *
-   * 默认: /\.(png|jpe?g|gif|svg)(\?.*)?$/
+   * 默认: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/
    */
   regExp?: RegExp
   /**

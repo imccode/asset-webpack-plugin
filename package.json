@@ -1,5 +1,5 @@
 {
-  "name": "smart-webpack-plugin",
+  "name": "asset-webpack-plugin",
   "version": "0.0.1",
   "description": "一个处理静态资源的webpack插件",
   "main": "lib/index.js",
@@ -12,7 +12,6 @@
     "README.md",
     "src/",
     "lib/",
-    "example",
     "types"
   ],
   "keywords": [
