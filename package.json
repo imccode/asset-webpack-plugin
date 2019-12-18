@@ -1,6 +1,6 @@
 {
   "name": "asset-webpack-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "一个处理静态资源的webpack插件",
   "main": "lib/index.js",
   "module": "src/index.ts",
