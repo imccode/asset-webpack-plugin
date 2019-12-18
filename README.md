@@ -51,6 +51,7 @@ module.exports = {
 ```
 
 ## 配置项
+具体配置项的数据类型见[types.ts](./src/types.ts)
 
 ### image
 
