@@ -1,6 +1,6 @@
 {
   "name": "asset-webpack-plugin",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "一个处理静态资源的webpack插件",
   "main": "lib/index.js",
   "module": "src/index.ts",
@@ -12,13 +12,11 @@
     "README.md",
     "src/",
     "lib/",
-    "types"
+    "types/"
   ],
   "keywords": [
     "asset-webpack-plugin",
-    "asset-webpack",
-    "webpack-plugin",
-    "webpack"
+    "asset-webpack"
   ],
   "license": "MIT",
   "engines": {
@@ -32,22 +30,18 @@
     "url": "https://github.com/imccode/asset-webpack-plugin/issues"
   },
   "homepage": "https://github.com/imccode",
-  "scripts": {
-    "test": "ts-node ./test/test.ts",
-    "build": "webpack --config ./my-app/test.js --mode production --display none",
-    "cli": "webpack --config ./my-app/test.js --mode development --display none -w"
-  },
+  "scripts": {},
   "dependencies": {
     "file-loader": "^5.0.2",
-    "url-loader": "^2.3.0",
-    "webpack": "^4.41.2"
+    "url-loader": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "^12.12.5",
-    "@types/webpack": "^4.41.0",
+    "@types/webpack": "latest",
     "prettier": "1.19.1",
     "ts-node": "latest",
     "ts-node-dev": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "webpack": "latest"
   }
 }
