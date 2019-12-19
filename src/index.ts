@@ -1,7 +1,6 @@
-import { Compiler, Configuration } from 'webpack'
-import fontConfig from './font'
-import imageConfig from './image'
-import mediaConfig from './media'
+import { Compiler } from 'webpack'
+import mergeOptions from './mergeOptions'
+import rulesConfig from './rules'
 import { AssetWebpackPluginOptions } from './types'
 
 /**
@@ -10,10 +9,8 @@ import { AssetWebpackPluginOptions } from './types'
 class AssetWebpackPlugin {
   options: AssetWebpackPluginOptions = {}
 
-  webpackConfig: Configuration = {}
-
   constructor(options: AssetWebpackPluginOptions = {}) {
-    this.options = options
+    this.options = mergeOptions(options)
   }
 
   /**
@@ -22,15 +19,13 @@ class AssetWebpackPlugin {
    */
   apply(compiler: Compiler) {
     compiler.hooks.afterEnvironment.tap('AssetWebpackPlugin', () => {
-      const image = imageConfig(this.options)
-      const font = fontConfig(this.options)
-      const media = mediaConfig(this.options)
-      compiler.options.module.rules.push(...image.rules, ...font.rules, ...media.rules)
+      const rules = rulesConfig(this.options)
+      compiler.options.module.rules.push(...rules)
     })
   }
 }
 
 export * from './types'
-export default AssetWebpackPlugin
 export { AssetWebpackPlugin }
+export default AssetWebpackPlugin
 module.exports = AssetWebpackPlugin

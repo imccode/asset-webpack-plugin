@@ -1,4 +1,3 @@
-import { RuleSetCondition } from 'webpack';
 /** 资源处理插件配置项 */
 export interface AssetWebpackPluginOptions {
     /** 图片资源配置项 */
@@ -7,14 +6,15 @@ export interface AssetWebpackPluginOptions {
     font?: FontOptions;
     /** 媒体资源配置项 */
     media?: MediaOptions;
+    /** 自定义配置项 */
+    [key: string]: {
+        [key: string]: any;
+    };
 }
 /** url-loader 配置项 */
 export interface UrlLoaderOptions extends FileLoaderOptions {
+    /** 自定义配置项 */
     [key: string]: any;
-    /** 包含处理的资源 */
-    include?: RuleSetCondition;
-    /** 排除要处理的资源 */
-    exclude?: RuleSetCondition;
     /**
      * 指定当目标文件的大小超过limit选项中设置的限制时使用的备用loader。
      *
@@ -106,7 +106,7 @@ export interface ImageOptions extends UrlLoaderOptions {
     /**
      * 输出资源名称
      *
-     * 默认: 'img/[name].[hash:8].[ext]'
+     * 默认: 'image/[name].[hash:8].[ext]'
      */
     name?: string | TransformPathFunction;
     /**
@@ -154,7 +154,7 @@ export interface MediaOptions extends UrlLoaderOptions {
     /**
      * 使用正则表达式来过滤需要处理的文件
      *
-     * 默认: /\.(png|jpe?g|gif|svg)(\?.*)?$/
+     * 默认: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/
      */
     regExp?: RegExp;
     /**
