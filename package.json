@@ -3,14 +3,11 @@
   "version": "0.1.0",
   "description": "一个处理静态资源的webpack插件",
   "main": "lib/index.js",
-  "module": "src/index.ts",
   "typings": "types/index.d.ts",
-  "type": "module",
   "author": "ccode",
   "files": [
     "LICENSE",
     "README.md",
-    "src/",
     "lib/",
     "types/"
   ],
