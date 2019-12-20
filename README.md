@@ -1,8 +1,16 @@
 # asset-webpack-plugin
 
-一个处理静态资源的 webpack 插件。
+:grin:一个处理静态资源的 webpack 插件。
 
 默认处理 `.png | .jpe | .jpep | .gif | .svg | .woff | .woff2 | .eot | .ttf | .otf | .mp4 | .webm | .ogg | .mp3 | .wav | .flac | .aac` 文件，分别生成对应 `image | font | media` 文件夹的资源文件
+
+:point_right:
+[![github](https://img.shields.io/github/release-date/imccode/asset-webpack-plugin)](https://github.com/imccode/asset-webpack-plugin/releases)
+[![github](https://img.shields.io/npm/v/asset-webpack-plugin)](https://www.npmjs.com/package/asset-webpack-plugin)
+[![github](https://img.shields.io/badge/webpack-%3E%20%3D%204.0.0-blue)](https://webpack.js.org/)
+[![github](https://img.shields.io/badge/node-%3E%20%3D%2010.0.0-blue)](https://nodejs.org/)
+[![github](https://img.shields.io/npm/l/asset-webpack-plugin)](https://www.npmjs.com/package/asset-webpack-plugin)
+[![github](https://img.shields.io/badge/PRs-welcome-green)](https://github.com/imccode/asset-webpack-plugin)
 
 ## 安装获取
 

@@ -17,7 +17,8 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=10.0.0",
+    "webpack": ">=4.0.0"
   },
   "repository": {
     "type": "git",
@@ -37,10 +38,10 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.5",
-    "@types/webpack": "latest",
+    "@types/webpack": "^4.41.0",
     "prettier": "1.19.1",
     "typescript": "latest",
-    "webpack": "latest"
+    "webpack": "^4.41.4"
   },
   "prettier": {
     "printWidth": 100,
