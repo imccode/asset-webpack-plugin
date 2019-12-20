@@ -37,7 +37,7 @@ module.exports = {
       font: {
         esModule: false
         //...
-      },Ø
+      },
       media: {
         esModule: false
         //...
@@ -79,7 +79,7 @@ module.exports = {
 ### [name] 自定义名称，例如：pdf
 
 - **name** 输出资源名称。 默认: `'pdf/[name].[hash:8].[ext]'`
-- **regExp** 使用正则表达式来过滤需要处理的文件。 默认: `/\.(pdf)(\?.*)?$/`
-- **limit** 该限制可以通过加载程序选项指定。 默认: `1e4`
+- **regExp** 使用正则表达式来过滤需要处理的文件。
+- **limit** 该限制可以通过加载程序选项指定。
 - **fallback** 指定当目标文件的大小超过 limit 选项中设置的限制时使用的备用 loader。 默认: `'file-loader'`
 - **...** [file-loader](https://github.com/webpack-contrib/file-loader)的 options 配置。
