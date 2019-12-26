@@ -4,7 +4,10 @@
   "description": "一个处理静态资源的webpack插件",
   "main": "lib/index.js",
   "typings": "types/index.d.ts",
-  "author": "ccode",
+  "author": {
+    "name": "ccode",
+    "url": "https://github.com/imccode"
+  },
   "files": [
     "LICENSE",
     "README.md",
@@ -27,8 +30,9 @@
   "bugs": {
     "url": "https://github.com/imccode/asset-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/imccode",
+  "homepage": "https://github.com/imccod/asset-webpack-plugin",
   "scripts": {
+    "tsc": "rm -rf types && tsc",
     "publish-npm": "rm -rf types && tsc && yarn publish --registry https://registry.npmjs.org",
     "publish-npm:next": "rm -rf types && tsc && yarn publish --registry https://registry.npmjs.org --tag next "
   },
