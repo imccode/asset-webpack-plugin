@@ -3,19 +3,22 @@ import { AssetWebpackPluginOptions, FontOptions, ImageOptions, MediaOptions } fr
 // 图片文件默认配置
 export const imageDefaultOptions: ImageOptions = {
   limit: 500,
-  regExp: /\.(png|jpe?g|gif|svg)(\?.*)?$/
+  regExp: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+  esModule: false
 }
 
 // 字体文件默认配置
 export const fontDefaultOptions: FontOptions = {
   limit: 1e4,
-  regExp: /\.(woff2?|eot|ttf|otf)(\?.*)?$/
+  regExp: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+  esModule: false
 }
 
 // 音频、视频媒体文件默认配置
 export const mediaDefaultOptions: MediaOptions = {
   limit: 1e4,
-  regExp: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/
+  regExp: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+  esModule: false
 }
 
 export default (options: AssetWebpackPluginOptions = {}) => {
