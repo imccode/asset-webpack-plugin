@@ -18,10 +18,7 @@ class AssetWebpackPlugin {
    * @param compiler
    */
   apply(compiler: Compiler) {
-    compiler.hooks.afterEnvironment.tap('AssetWebpackPlugin', () => {
-      const rules = rulesConfig(this.options)
-      compiler.options.module.rules.push(...rules)
-    })
+    compiler.options.module.rules.push(...rulesConfig(this.options))
   }
 }
 
